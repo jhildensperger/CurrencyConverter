@@ -1,0 +1,9 @@
+- Use location to set initial base currency
+- cache last selected
+- allow for addition of "to 'iso_code'"
+- auto complete currencies and iso_codes
+- tokenize iso_codes
+- abstract client
+- add models/integrate with parse
+- create pop over
+- about https://github.com/DangerCove/DCOAboutWindow

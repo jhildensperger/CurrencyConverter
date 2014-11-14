@@ -7,11 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0D8EF4501A149656005C6F48 /* KMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D8EF44C1A149656005C6F48 /* KMAppDelegate.m */; };
 		0D8EF4511A149656005C6F48 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D8EF44D1A149656005C6F48 /* MainMenu.xib */; };
-		0D8EF4521A149656005C6F48 /* KMFeedbinClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D8EF44F1A149656005C6F48 /* KMFeedbinClient.m */; };
+		0D8EF4501A149656005C6F48 /* ZYAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D8EF44C1A149656005C6F48 /* ZYAppDelegate.m */; };
 		0D8EF4541A14966C005C6F48 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D8EF4531A14966C005C6F48 /* Images.xcassets */; };
 		0D8EF45E1A149B44005C6F48 /* CurrencyConverterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D8EF45D1A149B44005C6F48 /* CurrencyConverterTests.m */; };
+		0DDAAC3F1A15D1BD00D94F15 /* ZYInputView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DDAAC3E1A15D1BD00D94F15 /* ZYInputView.xib */; };
+		0DDAAC471A15D5E500D94F15 /* DDHotKeyCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DDAAC421A15D5E500D94F15 /* DDHotKeyCenter.m */; };
+		0DDAAC481A15D5E500D94F15 /* DDHotKeyTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DDAAC441A15D5E500D94F15 /* DDHotKeyTextField.m */; };
+		0DDAAC491A15D5E500D94F15 /* DDHotKeyUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DDAAC461A15D5E500D94F15 /* DDHotKeyUtilities.m */; };
+		0DDAAC4B1A15DBFA00D94F15 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DDAAC4A1A15DBFA00D94F15 /* Carbon.framework */; };
 		442ABCE25FEC4F55A50E3FAE /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FFB016E14D247A19742E0B5 /* libPods.a */; };
 		815E9D8C196C6B0800F648E4 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 817AD67D196B026F0014C796 /* Bolts.framework */; };
 		815E9D8D196C6B1A00F648E4 /* Bolts.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 817AD67D196B026F0014C796 /* Bolts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
@@ -59,15 +63,22 @@
 
 /* Begin PBXFileReference section */
 		097B7FE015C4F1046F7C9195 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		0D8EF44B1A149656005C6F48 /* KMAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMAppDelegate.h; sourceTree = "<group>"; };
-		0D8EF44C1A149656005C6F48 /* KMAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMAppDelegate.m; sourceTree = "<group>"; };
 		0D8EF44D1A149656005C6F48 /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
-		0D8EF44E1A149656005C6F48 /* KMFeedbinClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMFeedbinClient.h; sourceTree = "<group>"; };
-		0D8EF44F1A149656005C6F48 /* KMFeedbinClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMFeedbinClient.m; sourceTree = "<group>"; };
+		0D8EF44B1A149656005C6F48 /* ZYAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYAppDelegate.h; sourceTree = "<group>"; };
+		0D8EF44C1A149656005C6F48 /* ZYAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYAppDelegate.m; sourceTree = "<group>"; };
 		0D8EF4531A14966C005C6F48 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		0D8EF4591A149B44005C6F48 /* CurrencyConverterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CurrencyConverterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D8EF45C1A149B44005C6F48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0D8EF45D1A149B44005C6F48 /* CurrencyConverterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CurrencyConverterTests.m; sourceTree = "<group>"; };
+		0D8EF46E1A14AAAE005C6F48 /* TODO */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TODO; sourceTree = "<group>"; };
+		0DDAAC3E1A15D1BD00D94F15 /* ZYInputView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZYInputView.xib; sourceTree = "<group>"; };
+		0DDAAC411A15D5E500D94F15 /* DDHotKeyCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDHotKeyCenter.h; sourceTree = "<group>"; };
+		0DDAAC421A15D5E500D94F15 /* DDHotKeyCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDHotKeyCenter.m; sourceTree = "<group>"; };
+		0DDAAC431A15D5E500D94F15 /* DDHotKeyTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDHotKeyTextField.h; sourceTree = "<group>"; };
+		0DDAAC441A15D5E500D94F15 /* DDHotKeyTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDHotKeyTextField.m; sourceTree = "<group>"; };
+		0DDAAC451A15D5E500D94F15 /* DDHotKeyUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDHotKeyUtilities.h; sourceTree = "<group>"; };
+		0DDAAC461A15D5E500D94F15 /* DDHotKeyUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDHotKeyUtilities.m; sourceTree = "<group>"; };
+		0DDAAC4A1A15DBFA00D94F15 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
 		4C58E72FEB92C4BD6439DAD3 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		4FFB016E14D247A19742E0B5 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B492ED44A4CB0ED9D0B2543 /* Pods-CurrencyConverterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CurrencyConverterTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CurrencyConverterTests/Pods-CurrencyConverterTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -109,6 +120,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DDAAC4B1A15DBFA00D94F15 /* Carbon.framework in Frameworks */,
 				97F7357D165B6AF000C4B72A /* ApplicationServices.framework in Frameworks */,
 				974268D81651F09E00F2BC57 /* CFNetwork.framework in Frameworks */,
 				974268D91651F09E00F2BC57 /* CoreGraphics.framework in Frameworks */,
@@ -145,6 +157,19 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		0DDAAC401A15D5E500D94F15 /* DDHotKey */ = {
+			isa = PBXGroup;
+			children = (
+				0DDAAC411A15D5E500D94F15 /* DDHotKeyCenter.h */,
+				0DDAAC421A15D5E500D94F15 /* DDHotKeyCenter.m */,
+				0DDAAC431A15D5E500D94F15 /* DDHotKeyTextField.h */,
+				0DDAAC441A15D5E500D94F15 /* DDHotKeyTextField.m */,
+				0DDAAC451A15D5E500D94F15 /* DDHotKeyUtilities.h */,
+				0DDAAC461A15D5E500D94F15 /* DDHotKeyUtilities.m */,
+			);
+			path = DDHotKey;
+			sourceTree = "<group>";
+		};
 		978816B0163F1D6F00C613D2 = {
 			isa = PBXGroup;
 			children = (
@@ -168,6 +193,7 @@
 		978816BE163F1D6F00C613D2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0DDAAC4A1A15DBFA00D94F15 /* Carbon.framework */,
 				817AD67D196B026F0014C796 /* Bolts.framework */,
 				97DFCF91166FF5FB0094BE60 /* ParseOSX.framework */,
 				978816BF163F1D6F00C613D2 /* Cocoa.framework */,
@@ -200,11 +226,12 @@
 		978816C5163F1D6F00C613D2 /* CurrencyConverter */ = {
 			isa = PBXGroup;
 			children = (
-				0D8EF44B1A149656005C6F48 /* KMAppDelegate.h */,
-				0D8EF44C1A149656005C6F48 /* KMAppDelegate.m */,
 				0D8EF44D1A149656005C6F48 /* MainMenu.xib */,
-				0D8EF44E1A149656005C6F48 /* KMFeedbinClient.h */,
-				0D8EF44F1A149656005C6F48 /* KMFeedbinClient.m */,
+				0DDAAC401A15D5E500D94F15 /* DDHotKey */,
+				0D8EF44B1A149656005C6F48 /* ZYAppDelegate.h */,
+				0D8EF44C1A149656005C6F48 /* ZYAppDelegate.m */,
+				0D8EF46E1A14AAAE005C6F48 /* TODO */,
+				0DDAAC3E1A15D1BD00D94F15 /* ZYInputView.xib */,
 				0D8EF4531A14966C005C6F48 /* Images.xcassets */,
 				978816C6163F1D6F00C613D2 /* Supporting Files */,
 			);
@@ -326,6 +353,7 @@
 				0D8EF4541A14966C005C6F48 /* Images.xcassets in Resources */,
 				978816D0163F1D6F00C613D2 /* Credits.rtf in Resources */,
 				0D8EF4511A149656005C6F48 /* MainMenu.xib in Resources */,
+				0DDAAC3F1A15D1BD00D94F15 /* ZYInputView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,9 +435,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0D8EF4521A149656005C6F48 /* KMFeedbinClient.m in Sources */,
 				978816CC163F1D6F00C613D2 /* main.m in Sources */,
-				0D8EF4501A149656005C6F48 /* KMAppDelegate.m in Sources */,
+				0DDAAC471A15D5E500D94F15 /* DDHotKeyCenter.m in Sources */,
+				0DDAAC491A15D5E500D94F15 /* DDHotKeyUtilities.m in Sources */,
+				0D8EF4501A149656005C6F48 /* ZYAppDelegate.m in Sources */,
+				0DDAAC481A15D5E500D94F15 /* DDHotKeyTextField.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -578,6 +608,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CurrencyConverter/CurrencyConverter-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/CurrencyConverter/CurrencyConverter-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_NAME = CurrencyConverter;
 				WRAPPER_EXTENSION = app;
 			};
@@ -596,6 +627,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CurrencyConverter/CurrencyConverter-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/CurrencyConverter/CurrencyConverter-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_NAME = CurrencyConverter;
 				WRAPPER_EXTENSION = app;
 			};
