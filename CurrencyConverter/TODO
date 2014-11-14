@@ -5,5 +5,8 @@
 - tokenize iso_codes
 - abstract client
 - add models/integrate with parse
-- create pop over
+- remove blue border from pop over
+- make logo
+- name it
+- add more labels
 - about https://github.com/DangerCove/DCOAboutWindow
