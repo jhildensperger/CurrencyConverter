@@ -644,6 +644,9 @@
             <connections>
                 <outlet property="currencySelectorMenuItem" destination="gCp-w0-FvP" id="Nzd-eP-mC9"/>
                 <outlet property="inputWindow" destination="NM7-gy-ck2" id="2jc-jY-Cgf"/>
+                <outlet property="labelFieldLeadingContraint" destination="z62-hd-YPO" id="ODC-SH-Ccl"/>
+                <outlet property="labelFieldWidthContraint" destination="x51-Bc-94i" id="lie-97-hhQ"/>
+                <outlet property="labelTextField" destination="RvD-CF-xaj" id="y2B-dV-RFP"/>
                 <outlet property="menu" destination="vEu-VA-QVy" id="Yox-g9-DNp"/>
                 <outlet property="textField" destination="Lwy-RH-ma1" id="3h4-6z-YQe"/>
             </connections>
@@ -669,22 +672,47 @@
             <point key="canvasLocation" x="502" y="494.5"/>
         </menu>
         <window allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" animationBehavior="default" id="NM7-gy-ck2" customClass="ZYRoundedWindow">
-            <windowStyleMask key="styleMask" closable="YES" miniaturizable="YES" resizable="YES" utility="YES" HUD="YES"/>
-            <rect key="contentRect" x="90" y="125" width="680" height="82"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1440" height="877"/>
-            <view key="contentView" id="DDr-q5-5HD">
-                <rect key="frame" x="0.0" y="0.0" width="680" height="82"/>
+            <windowStyleMask key="styleMask" closable="YES" miniaturizable="YES" resizable="YES"/>
+            <rect key="contentRect" x="90" y="125" width="680" height="66"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1177"/>
+            <view key="contentView" id="DDr-q5-5HD" customClass="ZYRoundedView">
+                <rect key="frame" x="0.0" y="0.0" width="680" height="66"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Lwy-RH-ma1">
-                        <rect key="frame" x="18" y="18" width="644" height="44"/>
+                    <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Lwy-RH-ma1" customClass="NSTokenField">
+                        <rect key="frame" x="18" y="11" width="546" height="39"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="542" id="Az1-eW-NH8"/>
+                            <constraint firstAttribute="height" constant="39" id="ghV-Os-hFY"/>
+                        </constraints>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" alignment="left" placeholderString="Currency Converter" id="uUn-8N-Yxz">
                             <font key="font" size="28" name="HelveticaNeue-Light"/>
-                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </textFieldCell>
+                        <connections>
+                            <outlet property="delegate" destination="494" id="7F6-Xj-dw9"/>
+                        </connections>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="RvD-CF-xaj">
+                        <rect key="frame" x="564" y="25" width="94" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="90" id="x51-Bc-94i"/>
+                        </constraints>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="= 123213 USD" id="elZ-2J-8eF">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
                 </subviews>
+                <constraints>
+                    <constraint firstItem="Lwy-RH-ma1" firstAttribute="top" secondItem="DDr-q5-5HD" secondAttribute="top" constant="16" id="YOU-0L-VuV"/>
+                    <constraint firstItem="RvD-CF-xaj" firstAttribute="top" secondItem="DDr-q5-5HD" secondAttribute="top" constant="24" id="eQD-Mz-Yy1"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="RvD-CF-xaj" secondAttribute="trailing" constant="20" id="ej3-P8-JUM"/>
+                    <constraint firstItem="Lwy-RH-ma1" firstAttribute="leading" secondItem="DDr-q5-5HD" secondAttribute="leading" constant="20" id="hVo-yW-Evc"/>
+                    <constraint firstItem="RvD-CF-xaj" firstAttribute="leading" secondItem="Lwy-RH-ma1" secondAttribute="leading" constant="546" id="z62-hd-YPO"/>
+                </constraints>
             </view>
             <point key="canvasLocation" x="536" y="40"/>
         </window>
