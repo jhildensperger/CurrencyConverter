@@ -15,6 +15,7 @@
 		0D2DC0991A15F795003BEFC8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D2DC0971A15F795003BEFC8 /* Images.xcassets */; };
 		0D2DC09A1A15F795003BEFC8 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D2DC0981A15F795003BEFC8 /* MainMenu.xib */; };
 		0D8EF45E1A149B44005C6F48 /* CurrencyConverterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D8EF45D1A149B44005C6F48 /* CurrencyConverterTests.m */; };
+		0DD60CAC1A1C7FCB009F89D2 /* Currency.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DD60CAB1A1C7FCB009F89D2 /* Currency.m */; };
 		0DDAAC4B1A15DBFA00D94F15 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DDAAC4A1A15DBFA00D94F15 /* Carbon.framework */; };
 		442ABCE25FEC4F55A50E3FAE /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FFB016E14D247A19742E0B5 /* libPods.a */; };
 		815E9D8C196C6B0800F648E4 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 817AD67D196B026F0014C796 /* Bolts.framework */; };
@@ -79,6 +80,8 @@
 		0D8EF45C1A149B44005C6F48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0D8EF45D1A149B44005C6F48 /* CurrencyConverterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CurrencyConverterTests.m; sourceTree = "<group>"; };
 		0D8EF46E1A14AAAE005C6F48 /* TODO */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = TODO; path = CurrencyConverter/TODO; sourceTree = "<group>"; };
+		0DD60CAA1A1C7FCB009F89D2 /* Currency.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Currency.h; sourceTree = "<group>"; };
+		0DD60CAB1A1C7FCB009F89D2 /* Currency.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Currency.m; sourceTree = "<group>"; };
 		0DDAAC4A1A15DBFA00D94F15 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
 		4C58E72FEB92C4BD6439DAD3 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		4FFB016E14D247A19742E0B5 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -148,6 +151,8 @@
 				0D2DC0861A15F774003BEFC8 /* ZYAppDelegate.m */,
 				0D2DC0871A15F774003BEFC8 /* ZYRoundedWindow.h */,
 				0D2DC0881A15F774003BEFC8 /* ZYRoundedWindow.m */,
+				0DD60CAA1A1C7FCB009F89D2 /* Currency.h */,
+				0DD60CAB1A1C7FCB009F89D2 /* Currency.m */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -465,6 +470,7 @@
 				0D2DC0951A15F780003BEFC8 /* DDHotKeyUtilities.m in Sources */,
 				978816CC163F1D6F00C613D2 /* main.m in Sources */,
 				0D2DC0891A15F774003BEFC8 /* ZYAppDelegate.m in Sources */,
+				0DD60CAC1A1C7FCB009F89D2 /* Currency.m in Sources */,
 				0D2DC08A1A15F774003BEFC8 /* ZYRoundedWindow.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
